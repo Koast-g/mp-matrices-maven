@@ -4,22 +4,21 @@ A project for CSC-207.
 
 Authors:
 
-* Your Name Here
+* Kostiantyn Tsymbal
 * Samuel A. Rebelsky (starter code)
 
 ---
 
 Overview:
-
-PLEASE PROVIDE AN OVERVIEW OF THE PROJECT FOR THOSE WHO MIGHT NOT
-OTHERWISE UNDERSTAND IT.
+This is a generic implementation of the  ulti dimensional arrays in Java.
 
 ---
 
 Citations:
+To be determined
 
 ---
 
-This code may be found at <https://github.com/USERID/mp-matrices-maven>. 
+This code may be found at <https://github.com/Koast-g/mp-matrices-maven.git>. 
 
 The original code may be found at <https://github.com/Grinnell-CSC207/mp-matrices-maven>.
