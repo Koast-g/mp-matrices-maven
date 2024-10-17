@@ -369,21 +369,22 @@ public class MatrixV0<T> implements Matrix<T> {
    */
   @SuppressWarnings("unchecked")
   public boolean equals(Object other) {
-    if (!(other instanceof MatrixV0)) {
+    if (other instanceof MatrixV0) {
+      MatrixV0<T> obj = (MatrixV0<T>) other;
+      if (this.numRow != obj.numRow || this.numCol != obj.numCol) {
+        return false;
+      } // if different dimensionas return false
+      for (int i = 0; i < this.numRow; i++) {
+        for (int j = 0; j < this.numCol; j++) {
+          if (!this.matrix[i][j].equals(obj.matrix[i][j])) {
+            return false;
+          } // if
+        } // inner for loop
+      } // outer loop
+      return true;
+    } else {
       return false;
-    } // if not a matrix retunr false
-    MatrixV0<T> obj = (MatrixV0<T>) other;
-    if (this.numRow == obj.numRow || this.numCol == obj.numCol) {
-      return false;
-    } // if different dimensionas return false
-    for (int i = 0; i < this.numRow; i++) {
-      for (int j = 0; j < this.numCol; j++) {
-        if (!this.matrix[i][j].equals(obj.matrix[i][j])) {
-          return false;
-        } // if
-      } // inner for loop
-    } // outer loop
-    return true;
+    } // if
   } // equals(Object)
 
   /**
